@@ -1,0 +1,17 @@
+{
+    "name": "HackathonServerApp",
+    "version": "0.0.1",
+    "description": "A sample app to test our application assumptions.",
+    "scripts": {
+        "start": "node server.js",
+        "start-dev": "nodemon server.js"
+    },
+    "dependencies": {
+        "dotenv": "^7.0.0",
+        "express": "^4.16.4",
+        "socket.io": "^2.2.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.10"
+    }
+}

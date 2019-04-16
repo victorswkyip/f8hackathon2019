@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    <script src="./engine.js"></script>
+  </head>
+  <body onload="init();">
+    <a-scene>
+      <!-- Load models here first -->
+      <a-assets> </a-assets>
+
+      <a-camera id="camera">
+        <a-entity
+          cursor="fuse: true; fuseTimeout: 5000"
+          position="0 0 -0.5"
+          geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+          material="color: black; shader: flat"
+          animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 5000; from: 1 1 1; to: 0.1 0.1 0.1"
+        >
+        </a-entity>
+      </a-camera>
+
+            <!-- Load models here first -->
+            <a-assets>
+            </a-assets>
+
+            <a-entity><a-camera id="camera">
+                <a-entity cursor="fuse: true; fuseTimeout: 5000" position="0 0 -0.5"
+                    geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: black; shader: flat"
+                    animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 5000; from: 1 1 1; to: 0.1 0.1 0.1">
+                </a-entity>
+            </a-camera></a-entity>
+        
+            <a-sky id="sky"></a-sky>
+        </a-scene>
+    </body>
+</html>
